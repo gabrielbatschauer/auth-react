@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import "./styles.css";
-import IndexDashboard from "./pages/dashboard";
-import Login from "./pages/login";
-import Register from "./pages/register";
-import Dashboard from "./components/LayoutComponents/DashBoard";
+import Dashboard from "./pages/dashboard/Dashboard";
+import NavDashboard from "./pages/dashboard/NavDashboard";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
     <Routes>
-      <Route path="/dashboard" element={<IndexDashboard />}>
+      <Route path="/dashboard" element={<NavDashboard />}>
         <Route index element={<Dashboard />} />
       </Route>
       <Route path="/login" element={<Login />}></Route>
