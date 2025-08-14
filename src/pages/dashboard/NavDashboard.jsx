@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { AuthContext } from "../../context/auth";
+import Spinner from "../../components/spinner/Spinner";
 
 function NavDashboard() {
   const { user, loading: isLoading, signOut } = useContext(AuthContext);
